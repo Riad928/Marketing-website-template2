@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketing template</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    </head>
 </head>
+</head>
+
 <body class="bg-gray-50">
 
-         <!-- =============== HEADER =============== -->
+    <!-- =============== HEADER =============== -->
 
-    <header class="bg-white shadow stacky top-0">
+    <header class="bg-white shadow sticky top-0">
         <div class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
             <h1 class="text-2xl font-bold text-blue-900">BrandX</h1>
-            <nav class="space-x-6 hidden md:block ">
-                <a href="#hero" class="hover:bg-blue-500">Home</a>
-                <a href="#about" class="hover:bg-blue-500">About</a>
-                <a href="#services" class="hover:bg-blue-500">Services</a>
-                <a href="#card" class="hover:bg-blue-500">Card</a>
-                <a href="#contact" class="hover:bg-blue-500">Contact</a>
+
+            <!-- Nav Menu (DESKTOP) -->
+            <nav class="space-x-6 hidden md:block px-2">
+                <a href="#hero" class=" text-lg hover:text-blue-500">Home</a>
+                <a href="#about" class=" text-lg hover:text-blue-500">About</a>
+                <a href="#services" class=" text-lg hover:text-blue-500">Services</a>
+                <a href="#card" class=" text-lg hover:text-blue-500">Card</a>
+                <a href="#contact" class=" text-lg hover:text-blue-500">Contact</a>
             </nav>
-            <button class="md:hidden px-4 py-2 rounded border">Menu</button>
+
+            <!-- search bar(Desktop) -->
+            <div class="hidden md:block px-4">
+                <input type="text" placeholder="Search..."
+                    class=" border px-4 py-2 rounded-xl text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-600">
+            </div>
+
+            <!-- Mobaile Button Menu -->
+            <button id="menubtn" class="md:hidden px-4 py-2 rounded border  ">Menu</button>
+        </div>
+        <!-- Nav Menu (Mobaile) -->
+        <div id="mobilemenu" class="hidden md:hidden px-4 py-4 space-y-4 bg-white ">
+            <a href="#hero" class=" block text-lg hover:text-blue-500">Home</a>
+            <a href="#about" class=" block text-lg hover:text-blue-500">About</a>
+            <a href="#services" class=" block text-lg hover:text-blue-500">Services</a>
+            <a href="#card" class=" block text-lg hover:text-blue-500">Card</a>
+            <a href="#contact" class=" block text-lg hover:text-blue-500">Contact</a>
+            <input type="text" placeholder="Search..."
+                class="w-full border px-4 py-2 rounded-xl text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-600">
+
         </div>
     </header>
     <main>
@@ -30,10 +53,11 @@
         <section class="bg-gray-800 py-16 ">
             <div class="max-w-7xl mx-auto px-6 text-center text-white ">
                 <h1 class="text-4xl md:text-6xl font-extrabold">Grow Your Business Faster </h1>
-                <p class="text-gray-300 mt-4">Modern marketing solutions to boost your sales and brand identity.</p>
-                <div class=" flex justify-center gap-4">
-                    <button class="bg-blue-600 text-xl font-semibold py-3 px-6 mt-6 border rounded-lg">Get Started</button>
-                    <button class="border text-xl px-6 py-3 mt-6 rounded-lg">Learm More</button>
+                <p class="text-gray-300 max-w-2xl mx-auto mt-4">Modern marketing solutions to boost your sales and brand
+                    identity.</p>
+                <div class=" flex justify-center gap-4 mt-6">
+                    <button class="bg-blue-600 text-xl font-semibold py-3 px-6 border rounded-lg">Get Started</button>
+                    <button class="border text-xl px-6 py-3 rounded-lg">Learn More</button>
                 </div>
             </div>
         </section>
@@ -42,10 +66,12 @@
         <section class="py-16 mt-6">
             <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-2">
                 <img src="/photo/images (1).jpeg" alt="photo" class="w-full h-80 object-cover">
-                <div class="mt-16 px-8">
+                <div class="mt-8 px-8">
                     <h1 class="text-xl font-bold mb-6">About Our Agency</h1>
-                    <p class="text-gray-600 mb-4">We help brands grow using digital marketing strategies that convert users into customers.</p>
-                    <p class="text-gray-600 mb-4">From SEO to social media ads—we handle everything to grow your business.</p>
+                    <p class="text-gray-600 mb-4">We help brands grow using digital marketing strategies that convert
+                        users into customers.</p>
+                    <p class="text-gray-600 mb-4">From SEO to social media ads—we handle everything to grow your
+                        business.</p>
                 </div>
             </div>
         </section>
@@ -57,7 +83,7 @@
                 <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-4">
                     <div class=" bg-black text-white border rounded-lg p-4 text-center hover:shadow-lg">
                         <h1 class="text-bold mb-4 text-xl">SEO Optimization</h1>
-                        <p class="text-gray-60 ">Rank higher on Google & increase organic traffic.</p>
+                        <p class="text-gray-300 ">Rank higher on Google & increase organic traffic.</p>
                     </div>
                     <div class="bg-black text-white border rounded-lg p-4 text-center hover:shadow-lg">
                         <h1 class="text-bold mb-4 text-xl">Social Media Ads</h1>
@@ -78,7 +104,7 @@
                 <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-4">
 
                     <!-- ====CARD 1==== -->
-                    <div class="text-center bg-gray-900 text-white py-6 px-4 rounded-xl shadow-md hover:shadow-lg">
+                    <div class="text-center bg-gray-900 text-white p-6 rounded-xl shadow-md hover:shadow-lg">
                         <h3 class="text-2xl font-bold">Starter</h3>
                         <p class=" mt-2">Perfect for beginners</p>
                         <p class="text-4xl font-bold mt-6">$49</p>
@@ -88,21 +114,22 @@
                             <li>✔ Email Support</li>
                         </ul>
                         <button class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg">Choose</button>
-                        </div>
-                            <!-- ====CARD 2==== -->
-                        <div class="bg-gray-900 text-white p-8 rounded-2xl shadow hover:shadow-xl text-center border-2 border-blue-600">
-                            <h3 class="text-2xl font-bold text-white">Professional</h3>
-                            <p class="text-white mt-2">Best for small businesses</p>
-                            <p class="text-4xl font-bold mt-6">$99</p>
-                            <ul class="mt-4 space-y-2 text-white">
-                                <li>✔ Full SEO</li>
-                                <li>✔ Weekly Reports</li>
-                                <li>✔ Ad Campaigns</li>
-                            </ul>
-                            <button class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg">Choose</button>
-                        </div>
+                    </div>
+                    <!-- ====CARD 2==== -->
+                    <div
+                        class="bg-gray-900 text-white p-8 rounded-2xl shadow hover:shadow-xl text-center border-2 border-blue-600">
+                        <h3 class="text-2xl font-bold text-white">Professional</h3>
+                        <p class="text-white mt-2">Best for small businesses</p>
+                        <p class="text-4xl font-bold mt-6">$99</p>
+                        <ul class="mt-4 space-y-2 text-white">
+                            <li>✔ Full SEO</li>
+                            <li>✔ Weekly Reports</li>
+                            <li>✔ Ad Campaigns</li>
+                        </ul>
+                        <button class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg">Choose</button>
+                    </div>
 
-                            <!-- ====CARD 3==== -->
+                    <!-- ====CARD 3==== -->
                     <!-- Card 3 -->
                     <div class="bg-gray-900 text-white p-8 rounded-2xl shadow hover:shadow-xl text-center">
                         <h3 class="text-2xl font-bold">Enterprise</h3>
@@ -116,65 +143,79 @@
                         <button class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg">Choose</button>
                     </div>
                 </div>
-            </div>
+
             </div>
         </section>
+
+        <!-- =============== Contact =============== -->
         <section class="py-16">
-            <div class="max-w-3xl mx-auto px-6">
+            <div class="max-w-3xl md:max-w-4xl mx-auto px-6">
                 <h1 class="text-center font-bold text-3xl mb-8">Contact Me</h1>
-           
-            <form class="border text-white rounded-2xl bg-gray-900 space-y-6 py-8">
-                <div class="mb-2 space-y-2 px-6">
-                    <label>Name: <span aria-hidden="true">*</span></label>
-                    <input type="text" class=" w-full border px-4 py-2 rounded-xl " required>
-                </div>
-                <div class="mb-2 space-y-2 px-6">
-                    <label class="text-bold ">Email:<span aria-hidden="true">*</span></label>
-                    <input type="email" class=" w-full border px-4 py-2 rounded-xl" required>
-                </div>
-                <div class="mb-2 space-y-2 px-6">
-                    <label class="font-semibold">Message</label>
-                    <textarea class="w-full mt-1 px-4 py-2 border rounded-lg h-32"></textarea>
-                </div>
-               <div class="mt-6 space-y-2 px-6">
-                <button class="border bg-green-900 w-full px-4 py-2 text-center rounded-lg shadow-md hover:shadow-lg">submit</button>
-               </div>
-            </form>
+
+                <form class="border text-white rounded-2xl bg-gray-900 space-y-6 py-8">
+                    <div class="mb-2 space-y-2 px-6">
+                        <label class="font-semibold">Name: <span aria-hidden="true">*</span></label>
+                        <input type="text" class=" w-full border px-4 py-2 rounded-xl " required>
+                    </div>
+                    <div class="mb-2 space-y-2 px-6">
+                        <label class="font-semibold ">Email:<span aria-hidden="true">*</span></label>
+                        <input type="email" class=" w-full border px-4 py-2 rounded-xl" required>
+                    </div>
+                    <div class="mb-2 space-y-2 px-6">
+                        <label class="font-semibold">Message</label>
+                        <textarea class="w-full mt-1 px-4 py-2 border rounded-lg h-32"></textarea>
+                    </div>
+                    <div class="mt-6 space-y-2 px-6">
+                        <button
+                            class="border bg-green-900 w-full px-4 py-2 text-center rounded-lg shadow-md hover:shadow-lg">submit</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
-        <!-- =============== FOOTER =============== -->
+    <!-- =============== FOOTER =============== -->
     <footer class="bg-gray-800 text-white py-10">
-       `<div class="max-w-7xl mx-auto px-6 flex sm:flex-cols-1 md:flex-cols-4  gap-28">
-          <div class="mx-6">
-             <h1 class="text-2xl font-semibold">BrandX</h1>
-             <p class="mt-2">Your trusted marketing partner.</p>
-          </div>
-          <div class="mx-6">
-             <h3 class="text-2xl font-semibold">Quick links</h3>
-            <ul class="space-y-2 mt-4">
-                <li>Home</li>
-                <li>About</li>
-                <li>Service</li>
-                <li>Contact</li>
-            </ul>
-            
-          </div >
-          <div class="mx-6">
-            <h3 class="text-2xl font-semibold">Support</h3>
-            <ul class="space-y-2 mt-4">
-                <li>Help Center</li>
-                <li>FaQ</li>
-                <li>Policy</li>
-                
-            </ul>
-          </div>
-          <div>
-            <h1 class="font-bold text-2xl mb-4">Newsletter</h1>
-            <input type="email" class="border bg-white text-white py-2 px-4 rounded-xl shadow-lg " required>
-          </div>
-       </div>
-       <p class="text-center mt-8">&copy; 2025 BrandX. All Rights Reserved.</p>
+        `<div class="max-w-7xl mx-auto px-6 flex sm:flex-cols-1 md:flex-cols-4  gap-28">
+            <div class="mx-6">
+                <h1 class="text-2xl font-semibold">BrandX</h1>
+                <p class="mt-2">Your trusted marketing partner.</p>
+            </div>
+            <div class="mx-6">
+                <h3 class="text-2xl font-semibold">Quick links</h3>
+                <ul class="space-y-2 mt-4">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Contact</li>
+                </ul>
+
+            </div>
+            <div class="mx-6">
+                <h3 class="text-2xl font-semibold">Support</h3>
+                <ul class="space-y-2 mt-4">
+                    <li>Help Center</li>
+                    <li>FaQ</li>
+                    <li>Policy</li>
+
+                </ul>
+            </div>
+            <div>
+                <h1 class="font-bold text-2xl mb-4">Newsletter</h1>
+                <input type="email" class="border bg-white text-white py-2 px-4 rounded-xl shadow-lg " required>
+            </div>
+        </div>
+        <p class="text-center mt-8">&copy; 2025 BrandX. All Rights Reserved.</p>
     </footer>
+    <!-- javascript code  -->
+    <script>
+        const menuBtn = document.getElementById("menubtn");
+        const mobileMenu = document.getElementById("mobilemenu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
 </body>
+
 </html>
