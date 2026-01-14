@@ -11,11 +11,10 @@
 
 <body class="bg-gray-50">
 
-    <!-- =============== HEADER =============== -->
-
-    <header class="bg-white shadow sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-blue-900">BrandX</h1>
+        <!-- =============== HEADER =============== -->
+        <header class="bg-white shadow sticky top-0 z-50">
+           <div class="max-w-7xl mx-auto px-6 h-16 md:h-24 flex justify-between items-center">
+              <h1 class="text-2xl font-bold text-blue-900">BrandX</h1>
 
             <!-- Nav Menu (DESKTOP) -->
             <nav class="space-x-6 hidden md:block px-2">
@@ -50,9 +49,9 @@
     </header>
     <main>
 
-        <!-- =============== HERO =============== -->
-        <section class="bg-gray-800 py-16 ">
-            <div class="max-w-7xl mx-auto px-6 text-center text-white ">
+        <!-- =============== HERO SECTION =============== -->
+        <section class="bg-gray-800 py-24">
+            <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-center text-white">
                 <h1 class="text-4xl md:text-6xl font-extrabold">Grow Your Business Faster </h1>
                 <p class="text-gray-300 max-w-2xl mx-auto mt-4">Modern marketing solutions to boost your sales and brand
                     identity.</p>
@@ -63,28 +62,34 @@
             </div>
         </section>
 
-        <!-- =============== ABOUT =============== -->
+        <!-- =============== ABOUT SECTION =============== -->
         <section class="py-16 mt-6">
-            <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-2">
-                <img src="/photo/images (1).jpeg" alt="photo" class="w-full h-80 object-cover">
-                <div class="mt-8 px-8">
-                    <h1 class="text-xl font-bold mb-6">About Our Agency</h1>
-                    <p class="text-gray-600 mb-4">We help brands grow using digital marketing strategies that convert
+            <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-8">
+
+                <!-- About photo -->
+                <div class="md:w-1/2">
+                   <img src="/photo/images (1).jpeg" alt="photo" class="h-80 object-cover rounded-xl">
+                </div>
+
+                <!-- About Text -->
+                <div class="md:w-1/2">
+                    <h1 class="text-4xl font-bold mb-6">About Our Agency</h1>
+                    <p class="text-gray-600 mt-4">We help brands grow using digital marketing strategies that convert
                         users into customers.</p>
-                    <p class="text-gray-600 mb-4">From SEO to social media ads—we handle everything to grow your
+                    <p class="text-gray-600 mt-2">From SEO to social media ads—we handle everything to grow your
                         business.</p>
                 </div>
             </div>
         </section>
 
-        <!-- =============== SERVICE =============== -->
-        <section class=" bg-gray-100 py-12">
-            <div class="max-w-7xl mx-auto px-6 ">
-                <h1 class="text-center font-semibold text-4xl mb-8">Our Services</h1>
+        <!-- =============== SERVICE SECTION =============== -->
+        <section class="bg-gray-100 py-12">
+            <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+                <h1 class="text-center font-bold text-5xl mb-8">Our Services</h1>
                 <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-4">
-                    <div class=" bg-black text-white border rounded-lg p-4 text-center hover:shadow-lg">
+                    <div class="bg-black text-white border rounded-lg p-4 text-center hover:shadow-lg">
                         <h1 class="text-bold mb-4 text-xl">SEO Optimization</h1>
-                        <p class="text-gray-300 ">Rank higher on Google & increase organic traffic.</p>
+                        <p class="text-gray-300">Rank higher on Google & increase organic traffic.</p>
                     </div>
                     <div class="bg-black text-white border rounded-lg p-4 text-center hover:shadow-lg">
                         <h1 class="text-bold mb-4 text-xl">Social Media Ads</h1>
@@ -98,10 +103,11 @@
                 </div>
             </div>
         </section>
-        <!-- =============== CARD =============== -->
-        <section class="py-16 ">
-            <div class="max-w-7xl mx-auto px-6">
-                <h1 class="text-center text-4xl font-bold mb-12">My Card</h1>
+
+        <!-- =============== CARD SECTION =============== -->
+        <section class="py-16">
+            <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+                <h1 class="text-center text-5xl font-bold mb-12">My Card</h1>
                 <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-4">
 
                     <!-- ====CARD 1==== -->
@@ -148,7 +154,7 @@
             </div>
         </section>
 
-        <!-- =============== Contact =============== -->
+        <!-- =============== CONTACT SECTION =============== -->
         <section class="py-16">
             <div class="max-w-3xl md:max-w-4xl mx-auto px-6">
                 <h1 class="text-center font-bold text-3xl mb-8">Contact Me</h1>
@@ -174,49 +180,51 @@
             </div>
         </section>
     </main>
-    <!-- =============== FOOTER =============== -->
-    <footer class="bg-gray-800 text-white py-10">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-6 md:gap-12">
+
+       <!-- =============== FOOTER SECTION =============== -->
+       <footer class="bg-gray-800 text-white py-10">
+          <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-12 items-center text-center">
             <div>
                 <h1 class="text-2xl font-semibold">BrandX</h1>
                 <p class="mt-2">Your trusted marketing partner.</p>
             </div>
+
             <div>
                 <h3 class="text-2xl font-semibold">Quick links</h3>
                 <ul class="space-y-2 mt-4">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Service</li>
-                    <li>Contact</li>
+                    <a href="#"><li class="mt-2">Home</li></a>
+                    <a href="#"><li class="mt-2">About</li></a>
+                    <a href="#"><li class="mt-2">Service</li></a>
+                    <a href="#"><li class="mt-2">Contact</li></a>
                 </ul>
-
             </div>
+            
             <div>
                 <h3 class="text-2xl font-semibold">Support</h3>
                 <ul class="space-y-2 mt-4">
-                    <li>Help Center</li>
-                    <li>FAQ</li>
-                    <li>Policy</li>
-
+                   <a href="#"><li class="mt-2">Help Center</li></a> 
+                    <a href="#"><li class="mt-2">FAQ</li></a>
+                    <a href="#"><li class="mt-2">Policy</li></a>
                 </ul>
             </div>
-            <div class=" mt-6 md:mt-0">
+        
+            <div class="mt-6 md:mt-0">
                 <h1 class="font-bold text-2xl mb-4">Newsletter</h1>
                 <input type="email" class=" w-full border bg-gray-800 text-white py-2 px-4 rounded-xl shadow-lg " required>
             </div>
-        </div>
-        <p class="text-center mt-8">&copy; 2025 BrandX. All Rights Reserved.</p>
-    </footer>
-    <!-- javascript code  -->
-    <script>
-        const menuBtn = document.getElementById("menubtn");
-        const mobileMenu = document.getElementById("mobilemenu");
+          </div>
+          <p class="text-center mt-8">&copy; 2025 BrandX. All Rights Reserved.</p>
+        </footer>
 
-        menuBtn.addEventListener("click", () => {
-            mobileMenu.classList.toggle("hidden");
-        });
-    </script>
+        <!-- ================= JAVASCRIPT CODE ================ -->
+        <script>
+            const menuBtn = document.getElementById("menubtn");
+            const mobileMenu = document.getElementById("mobilemenu");
 
-</body>
+               menuBtn.addEventListener("click", () => {
+               mobileMenu.classList.toggle("hidden");
+               });
+        </script>
 
+   </body>
 </html>
