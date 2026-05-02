@@ -88,7 +88,7 @@
         <!-- =============== SERVICE SECTION =============== -->
         <section id="services" class="bg-gray-100 py-16">
             <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-                <h1 class="text-center font-bold text-5xl mb-8">Our Services</h1>
+                <h2 class="text-center font-bold text-3xl md:text-4xl lg:text-5xl mb-8">Our Services</h2>
                
                 <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
 
@@ -112,13 +112,13 @@
         </section>
 
         <!-- =============== CARD SECTION =============== -->
-        <section id="card" class="py-16">
+        <section id="card" aria-labelledby="Card-heading" class="py-16">
             <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-                <h1 class="text-center text-5xl font-bold mb-12">My Card</h1>
+                <h2 id="card-heading" class="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-12">My Card</h2>
                 <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
 
                     <!-- ====CARD 1==== -->
-                    <div class="text-center bg-gray-900 text-white p-6 rounded-xl shadow-md hover:shadow-2xl transition duration-300 hover:-translate-y-2">
+                    <article class="text-center bg-gray-900 text-white p-6 rounded-xl shadow-md hover:shadow-2xl transition-all ease-in-out duration-300 hover:-translate-y-2">
                         <h3 class="text-2xl font-bold">Starter</h3>
                         <p class=" mt-2">Perfect for beginners</p>
                         <p class="text-4xl font-bold mt-6">$49</p>
@@ -127,12 +127,12 @@
                             <li>✔ Social Media Setup</li>
                             <li>✔ Email Support</li>
                         </ul>
-                        <button class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg">Choose</button>
-                    </div>
+                        <button type="button" aria-label="Choose starter plan" class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg">Choose</button>
+                    </article>
 
                     <!-- ====CARD 2==== -->
-                    <div
-                        class="bg-gray-900 text-white p-8 rounded-2xl shadow text-center border-2 border-blue-600 hover:shadow-2xl transition duration-300 hover:-translate-y-2">
+                    <article
+                        class="bg-gray-900 text-white p-8 rounded-2xl shadow text-center border-2 border-blue-600 hover:shadow-2xl transition-all ease-in-out duration-300 hover:-translate-y-2">
                         <h3 class="text-2xl font-bold text-white">Professional</h3>
                         <p class="text-white mt-2">Best for small businesses</p>
                         <p class="text-4xl font-bold mt-6">$99</p>
@@ -141,11 +141,11 @@
                             <li>✔ Weekly Reports</li>
                             <li>✔ Ad Campaigns</li>
                         </ul>
-                        <button class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg">Choose</button>
-                    </div>
+                        <button type="button" aria-label="Choose starter plan" class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg">Choose</button>
+                    </article>
 
                     <!-- ====CARD 3==== -->
-                    <div class="bg-gray-900 text-white p-8 rounded-2xl shadow hover:shadow-xl text-center hover:shadow-2xl transition duration-300 hover:-translate-y-2">
+                    <article class="bg-gray-900 text-white p-8 rounded-2xl shadow hover:shadow-xl text-center hover:shadow-2xl transition-all ease-in-out duration-300 hover:-translate-y-2">
                         <h3 class="text-2xl font-bold">Enterprise</h3>
                         <p class="text-white mt-2">For large companies</p>
                         <p class="text-4xl font-bold mt-6">$199</p>
@@ -154,34 +154,41 @@
                             <li>✔ Dedicated Manager</li>
                             <li>✔ 24/7 Support</li>
                         </ul>
-                        <button class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg">Choose</button>
-                    </div>
+                        <button type="button" aria-label="Choose starter plan" class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg">Choose</button>
+                    </article>
                 </div>
-
             </div>
         </section>
 
         <!-- =============== CONTACT SECTION =============== -->
-        <section id="contact" class="py-16">
-            <div class="max-w-3xl md:max-w-4xl mx-auto px-6">
-                <h1 class="text-center font-bold text-3xl mb-8">Contact Me</h1>
+        <section id="contact" aria-labelledby="contact-heading" class="py-16 bg-gray-200">
+            <div class="max-w-3xl md:max-w-4xl mx-auto px-4 md:px-6 lg:px-8">
+                <h2 id="contact-heading" class="text-center font-bold text-3xl md:text-4xl mb-8">Contact Me</h2>
 
-                <form class="border text-white rounded-2xl bg-gray-900 space-y-6 py-8">
-                    <div class="mb-2 space-y-2 px-6">
-                        <label class="font-semibold">Name: <span aria-hidden="true">*</span></label>
-                        <input type="text" class=" w-full border px-4 py-2 rounded-xl " required>
+                <form class="border text-white rounded-2xl bg-gray-900 space-y-6 p-6">
+                   
+                    <!-- Name -->
+                    <div class="flex-1">
+                        <label for="name" class="block mb-2 font-semibold">Name:</label>
+                        <input type="text" id="name" name="name" class=" w-full border px-4 py-2 rounded-xl" required aria-required="true">
                     </div>
-                    <div class="mb-2 space-y-2 px-6">
-                        <label class="font-semibold ">Email:<span aria-hidden="true">*</span></label>
-                        <input type="email" class=" w-full border px-4 py-2 rounded-xl" required>
+
+                    <!-- Email -->
+                    <div class="flex-1">
+                        <label for="email" class="block mb-2 font-semibold ">Email:</label>
+                        <input type="email" id="email" name="email" class=" w-full border px-4 py-2 rounded-xl" required aria-required="true">
                     </div>
-                    <div class="mb-2 space-y-2 px-6">
-                        <label class="font-semibold">Message</label>
-                        <textarea class="w-full mt-1 px-4 py-2 border rounded-lg h-32"></textarea>
+
+                    <!-- Message -->
+                    <div class="flex-1">
+                        <label for="message" class="block mb-2 font-semibold">Message</label>
+                        <textarea id="message" name="message" rows="5" class="w-full mt-1 px-4 py-2 border rounded-lg h-32"></textarea>
                     </div>
-                    <div class="mt-6 space-y-2 px-6">
-                        <button
-                            class="border bg-green-900 w-full px-4 py-2 text-center rounded-lg shadow-md hover:shadow-lg">submit</button>
+
+                    <!-- button -->
+                    <div class="mt-8">
+                        <button type="submit" aria-label=" Form Submit button"
+                            class="border bg-green-700 w-full px-4 py-2 text-center rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out">Submit</button>
                     </div>
                 </form>
             </div>
@@ -190,38 +197,54 @@
 
        <!-- =============== FOOTER SECTION =============== -->
        <footer class="bg-gradient-to-t from-gray-200 via-gray-500 to-gray-800 text-white py-10 md:py-12">
-          <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-12 text-center md:text-left">
-            <div>
-                <h1 class="text-2xl font-semibold">BrandX</h1>
-                <p class="mt-2 text-gray-300">Your trusted marketing partner.</p>
-            </div>
+          <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 items-center gap-2 md:gap-4 text-center md:text-left">
+           
+            <!-- footer brand -->
+            <section aria-labelledby="footer-brand" class="space-y-2">
+                <h2 id="footer-brand" class="text-2xl font-semibold">BrandX</h2>
+                <p class="text-gray-300">Your trusted marketing partner.</p>
+            </section>
 
-            <div>
-                <h3 class="text-2xl font-semibold mb-6">Quick link</h3>
+            <!-- footer link -->
+            <nav aria-labelledby="footer-link">
+                <h3 id="footer-link" class="text-2xl font-semibold mb-6">Quick links</h3>
                 <ul class="space-y-2">
                     <li><a href="#" class="hover:underline">Home</a></li>
                     <li><a href="#" class="hover:underline">About</a></li>
                     <li><a href="#" class="hover:underline">Service</a></li>
                     <li><a href="#" class="hover:underline">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
             
-            <div>
-                <h3 class="text-2xl font-semibold mb-6">Support</h3>
-                <ul class="space-y-3">
-                    <li><a href="#" class="hover:underline">Help Ceter</a></li>
+            <!-- footer support -->
+            <div aria-labelledby="footer-support">
+                <h3 id="footer-support" class="text-2xl font-semibold mb-6">Support</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline">Help Center</a></li>
                     <li><a href="#" class="hover:underline">FAQ</a></li>
-                    <li><a href="#" class="hover:underline">policy</a></li>
-                    
+                    <li><a href="#" class="hover:underline">Privacy policy</a></li>                  
                 </ul>
             </div>
-        
-            <div class="mt-6 md:mt-0">
-                <h3 class="font-semibold text-2xl mb-6">Newsletter</h3>
-                <input type="email" placeholder="Enter Your Email.." class="w-full border bg-white text-black py-4 px-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-1 focus:outline-none focus:border-blue-500 focus:ring-blue-500 focus:ring-2" required>
-            </div>
+            
+            <!-- newsletter-email -->
+            <form class="space-y-3 flex flex-col md:flex-row gap-1 items-center">
+                <label for="newsletter-email" class="sr-only">Email</label>
+            
+                <input type="email" id="newsletter-email" placeholder="Enter your email" class="border p-4 rounded-2xl bg-white text-gray-800 focus:ring-2 focus:ring-blue-500 transition" required >
+            
+                <button type="submit" class="bg-blue-600 px-4 py-2 rounded-lg  transition">
+                    Subscribe
+                </button>
+            </form>
           </div>
-          <p class="text-center mt-8">&copy; 2025 BrandX. All Rights Reserved.</p>
+          
+        <div role="contentinfo" class="mt-8 text-center space-y-6">
+            <hr class="border-white/20">
+        
+            <p class="text-sm text-gray-200">
+                © 2025 BrandX. All rights reserved.
+            </p>
+        </div>
         </footer>
 
         <!-- ================= JAVASCRIPT CODE ================ -->
